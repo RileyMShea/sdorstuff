@@ -2,13 +2,14 @@
   font-family: lato, sans-serif;
   display: grid;
 }
+
 * {
   font-family: lato, sans-serif !important;
 }
 code > * {
   font-family: "Fira Code", Consolas !important;
-  font-weight: 400!important;
-  font-size: 14px!important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
 }
 
 .swagger-ui .scheme-container {
@@ -44,9 +45,21 @@ code > * {
   font-family: lato, sans-serif;
   color: #8b0000;
 }
+
 #logo a img {
-  float: left;
-  max-width: 300px;
+  max-width: 225px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+@media screen and (max-width: 680px) {
+  #logo a img {
+    max-width: 225px;
+    position: relative;
+    float: left;
+    top: unset;
+    right: unset;
+  }
 }
 
 .swagger-ui .info .title {
@@ -188,6 +201,23 @@ code > * {
   padding-bottom: 1px;
 }
 
-.version{
-font-weight:600;
+.version {
+  font-weight: 600;
+}
+#App
+  > div:nth-child(2)
+  > div
+  > div:nth-child(2)
+  > div.information-container.wrapper
+  > section
+  > div
+  > div
+  > hgroup
+  > a {
+  display: none;
+}
+
+body,
+html {
+  min-width: 900px;
 }
